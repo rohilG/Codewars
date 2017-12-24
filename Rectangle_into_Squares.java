@@ -1,5 +1,6 @@
 package Practice;
 
+import java.awt.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,21 +10,28 @@ public class Rectangle_into_Squares {
 		Scanner input = new Scanner (System.in);
 		int lng = input.nextInt();
 		int wdth = input.nextInt();
-		int area = lng*wdth;
 		ArrayList<Integer> ans = new ArrayList<Integer>();
-		
+	
 		if (lng == wdth) {
-			System.out.println("NULL");
+			System.out.println("null");
 		}
-		
-		while (area != 0) {
-			ans.add((int) Math.floor(Math.sqrt(area)));
-			area -= Math.pow((int) Math.floor(Math.sqrt(area)), 2);
+		else {
+			while (lng != wdth) {
+				ans.add(Math.min(lng, wdth));
+				if (lng < wdth) {
+					wdth -= lng;
+				}
+				else {
+					lng -= wdth;
+				}
+			}
+			ans.add(lng);
+			System.out.println(ans);
 		}
-		
-		//can also iterate through ans and output its elements
-		//return ans;
 
 	}
-
 }
+
+// (610 78) -> [78, 78, 78, 78, 78, 78, 78, 64, 14, 14, 14, 14, 8, 6, 2, 2, 2]
+// (5 5) -> null
+// (20 14) -> [14, 6, 6, 2, 2, 2]
