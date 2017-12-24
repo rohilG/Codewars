@@ -9,7 +9,7 @@ public class Tribonacci_Sequence {
 		double[] s = {input.nextInt(), input.nextInt(), input.nextInt()};
 		int n = input.nextInt();
 
-		//returns a list of integers
+		//returns a list of n integers in the tribonacci sequence
 		tribonacci(s, n);
 		
 	}
