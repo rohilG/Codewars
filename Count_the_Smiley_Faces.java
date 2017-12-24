@@ -29,6 +29,12 @@ public class Count_the_Smiley_Faces {
 		a.add(";-("); a.add(";-)"); a.add(";~("); a.add(":~D");
 		
 		System.out.println(countSmileys(a));
+		System.out.println(countSmileysEfficient(a));
+	}
+	
+	//Added efficient method
+	public static int countSmileysEfficient(List<String> arr) {
+		return (int) arr.stream().filter(x -> x.matches("[:;][-~]?[)D]")).count();
 	}
 	
 	public static int countSmileys(List<String> arr) {
