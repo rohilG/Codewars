@@ -8,6 +8,10 @@ public class Exes_and_Ohs {
 		Scanner input = new Scanner (System.in);
 		String str = input.nextLine();
 		System.out.println(getXO(str));
+		
+		//Cleaner solution:
+		str = str.toLowerCase();
+		System.out.println(str.replace("x", "").length() == str.replace("o", "").length());
 	}
 	
 	public static boolean getXO (String str) {
