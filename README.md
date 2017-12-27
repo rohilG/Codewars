@@ -1,3 +1,4 @@
+______________________________________________________________________________________________________________________________
 A Noisy Class:
 One day Mr. Sidhu's class is excessively loud. Unfortunately, giving them an activity about tiles didn't really work.
 
@@ -41,7 +42,7 @@ N
 Explanation for Sample Input 2:
 After telling student 11 to quiet down student 22 will immediately distract him, and vice-versa. Since there is a cycle the class will never be quiet!
 
-
+______________________________________________________________________________________________________________________________
 Complementary DNA:
 
 Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
@@ -54,7 +55,7 @@ DnaStrand.makeComplement("ATTGC") // return "TAACG"
 
 DnaStrand.makeComplement("GTAT") // return "CATA"
 
-
+______________________________________________________________________________________________________________________________
 Count the Smiley Faces:
 
 Given an array (arr) as an argument complete the function countSmileys that should return the total number of smiling faces.
@@ -77,7 +78,7 @@ countSmileys([';]', ':[', ';*', ':$', ';-D']); // should return 1;
 
 Note: In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same
 
-
+______________________________________________________________________________________________________________________________
 Dubstep:
 
 Polycarpus works as a DJ in the best Berland nightclub, and he often uses dubstep music in his performance. Recently, he has decided to take a couple of old songs and make dubstep remixes from them.
@@ -89,7 +90,7 @@ For example, a song with words "I AM X" can transform into a dubstep remix as "W
 
 Recently, Jonny has heard Polycarpus's new dubstep track, but since he isn't into modern music, he decided to find out what was the initial song that Polycarpus remixed. Help Jonny restore the original song.
 
-
+______________________________________________________________________________________________________________________________
 Duplicate Encoder:
 
 The goal of this exercise is to convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')' if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
@@ -104,7 +105,7 @@ Examples:
 
 "(( @" => "))(("
 
-
+______________________________________________________________________________________________________________________________
 Exes and Ohs:
 
 Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contains any char.
@@ -117,7 +118,7 @@ XO("ooxXm") => true
 XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 XO("zzoo") => false
 
-
+______________________________________________________________________________________________________________________________
 Gap in Primes:
 
 The prime numbers are not regularly spaced. For example from 2 to 3 the gap is 1. From 3 to 5 the gap is 2. From 7 to 11 it is 4. Between 2 and 50 we have the following pairs of 2-gaps primes: 3-5, 5-7, 11-13, 17-19, 29-31, 41-43
@@ -144,4 +145,35 @@ gap(4, 130, 200) --> [163, 167] or (163, 167) or {163, 167}
 
 ([193, 197] is also such a 4-gap primes between 130 and 200 but it's not the first pair)
 
-gap(6,100,110) --> nil or {0, 0} : between 100 and 110 we have 101, 103, 107, 109 but 101-107is not a 6-gap because there is 103in between and 103-109is not a 6-gap because there is 107 in between.
+gap(6,100,110) --> nil or {0, 0} : between 100 and 110 we have 101, 103, 107, 109 but 101-107is not a 6-gap because there is 103 in between and 103-109is not a 6-gap because there is 107 in between.
+
+______________________________________________________________________________________________________________________________
+List Multipliers:
+
+Given two arrays a and b write a function comp(a, b) (compSame(a, b) in Clojure) that checks whether the two arrays have the "same" elements, with the same multiplicities. "Same" means, here, that the elements in b are the elements in a squared, regardless of the order.
+
+Examples
+Valid arrays
+a = [121, 144, 19, 161, 19, 144, 19, 11]  
+b = [121, 14641, 20736, 361, 25921, 361, 20736, 361]
+comp(a, b) returns true because in b 121 is the square of 11, 14641 is the square of 121, 20736 the square of 144, 361 the square of 19, 25921 the square of 161, and so on. It gets obvious if we write b's elements in terms of squares:
+
+a = [121, 144, 19, 161, 19, 144, 19, 11] 
+b = [11*11, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19]
+Invalid arrays
+If we change the first number to something else, comp may not return true anymore:
+
+a = [121, 144, 19, 161, 19, 144, 19, 11]  
+b = [132, 14641, 20736, 361, 25921, 361, 20736, 361]
+comp(a,b) returns false because in b 132 is not the square of any number of a.
+
+a = [121, 144, 19, 161, 19, 144, 19, 11]  
+b = [121, 14641, 20736, 36100, 25921, 361, 20736, 361]
+comp(a,b) returns false because in b 36100 is not the square of any number of a.
+
+Remarks
+a or b might be [] (all languages except R, Shell). a or b might be nil or null or None (except in Haskell, Elixir, C++, Rust, R, Shell).
+
+If a or b are nil (or null or None), the problem doesn't make sense so return false.
+
+If a or b are empty the result is evident by itself.
