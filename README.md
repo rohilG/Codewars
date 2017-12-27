@@ -79,3 +79,15 @@ and between words (at least one between any pair of neighbouring words), and the
 For example, a song with words "I AM X" can transform into a dubstep remix as "WUBWUBIWUBAMWUBWUBX" and cannot transform into "WUBWUBIAMWUBX".
 
 Recently, Jonny has heard Polycarpus's new dubstep track, but since he isn't into modern music, he decided to find out what was the initial song that Polycarpus remixed. Help Jonny restore the original song.
+
+Complementary DNA:
+
+Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
+
+If you want to know more: http://en.wikipedia.org/wiki/DNA
+
+In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". You have function with one side of the DNA (string, except for Haskell); you need to get the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+
+DnaStrand.makeComplement("ATTGC") // return "TAACG"
+
+DnaStrand.makeComplement("GTAT") // return "CATA"
