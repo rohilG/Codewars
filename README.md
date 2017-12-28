@@ -1,4 +1,4 @@
-______________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________
 A Noisy Class:
 One day Mr. Sidhu's class is excessively loud. Unfortunately, giving them an activity about tiles didn't really work.
 
@@ -9,8 +9,7 @@ After many hours of careful observations, Mr. Sidhu has given you a list contain
 Given the size of his class (as seen in New Students), he can only tell students to stop talking individually. Note that connections are in one direction - the noisy students talk to the distracted students, but not the other way around.
 
 Input Specification:
-The first line consists of NN (1≤N≤10000)(1≤N≤10000), the number of students; each student is assigned a number from 11 to NN.
-The next line contains MM (1≤M≤10000)(1≤M≤10000), the number of connections.
+The first line consists of NN (1≤N≤10000)(1≤N≤10000), the number of students; each student is assigned a number from 11 to NN. The next line contains MM (1≤M≤10000)(1≤M≤10000), the number of connections.
 The next MM lines contain two space-separated integers, representing the noisy student and the distracted student respectively. Given the sheer size, it is not guaranteed that the connections are distinct.
 
 Output Specification
@@ -42,7 +41,7 @@ N
 Explanation for Sample Input 2:
 After telling student 11 to quiet down student 22 will immediately distract him, and vice-versa. Since there is a cycle the class will never be quiet!
 
-______________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________
 Complementary DNA:
 
 Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
