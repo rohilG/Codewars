@@ -87,7 +87,7 @@ For example, a song with words "I AM X" can transform into a dubstep remix as "W
 
 Recently, Jonny has heard Polycarpus's new dubstep track, but since he isn't into modern music, he decided to find out what was the initial song that Polycarpus remixed. Help Jonny restore the original song.
 
-______________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________
 Duplicate Encoder:
 
 The goal of this exercise is to convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')' if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
@@ -102,7 +102,7 @@ Examples:
 
 "(( @" => "))(("
 
-______________________________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________________________
 Exes and Ohs:
 
 Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contains any char.
