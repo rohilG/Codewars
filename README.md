@@ -211,3 +211,5 @@ second one : which($2) ->
 1 for getting John's sum
 
 2 for getting Ann's sum.
+
+********************************************** REFINE FOR GREATER EFFICIENCY **********************************************
